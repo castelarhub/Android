@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
 	
@@ -22,12 +24,15 @@ public class MainActivity extends ActionBarActivity {
 		Button btn = (Button) findViewById(R.id.btn_submit);
 		
 		btn.setOnClickListener(new OnClickListener(){
-
+			
 			@Override
 			public void onClick(View arg0) {
 				Log.i(TAG,"hizo click");
-				// TODO Auto-generated method stub
 				
+				EditText txt_editName = (EditText) findViewById(R.id.edit_name);
+				TextView txt_message = (TextView)  findViewById(R.id.txt_msg);
+				
+				txt_message.setText("Hola "+ txt_editName.getText());				
 				
 			}
 			
