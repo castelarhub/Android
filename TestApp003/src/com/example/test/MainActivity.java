@@ -33,7 +33,6 @@ public class MainActivity extends ActionBarActivity {
 				TextView txt_message = (TextView)  findViewById(R.id.txt_msg);
 				
 				txt_message.setText("Hola "+ txt_editName.getText());				
-				
 			}
 			
 			
